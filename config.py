@@ -1,11 +1,8 @@
 import os
 from os import getenv
-from dotenv import load_dotenv
+
 
 if os.path.exists("local.env"):
-    load_dotenv("local.env")
-
-load_dotenv()
 API_ID_KEY = Config.API_ID
 API_HASH_KEY = Config.API_HASH
 STRING_SESSION = Config.STRING_SESSION
