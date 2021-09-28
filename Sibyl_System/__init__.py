@@ -26,9 +26,6 @@ if ENV:
     GBAN_MSG_LOGS = int(os.environ.get('GBAN_MSG_LOGS', None))
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
-INSPECTORS.extend(SIBYL)
-ENFORCERS.extend(INSPECTORS)
-
 session = aiohttp.ClientSession()
 
 MONGO_CLIENT = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
