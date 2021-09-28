@@ -1,0 +1,25 @@
+{
+    "name": "XOVELY SYSTEM",
+    "description": "A SCANNER SYSTEM",
+    "logo": "https://telegra.ph/file/3add51ef0351f4ea0dac6.jpg",
+    "keywords": ["pytgcalls", "pyrogram", "telegram bot"],
+    "env": {
+        "STRING_SESSION": {
+            "description": "python3 generatestringsession.py"
+        },
+        "API_ID_KEY": {
+            "description": "Your API_ID from https://my.telegram.org/apps"
+        },
+        "API_HASH_KEY": {
+            "description": "Your API_HASH from https://my.telegram.org/apps"
+        }
+    },
+     "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+     }
+    ]
+}
