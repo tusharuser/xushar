@@ -27,8 +27,8 @@ if ENV:
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
 else:
     import config as Config
-    API_ID_KEY = Config.API_ID
-    API_HASH_KEY = Config.API_HASH
+    API_ID_KEY = Config.API_ID_KEY
+    API_HASH_KEY = Config.API_HASH_KEY
     STRING_SESSION = Config.STRING_SESSION
     MONGO_DB_URL = Config.MONGO_DB_URL
     SIBYL = Config.SIBYL
